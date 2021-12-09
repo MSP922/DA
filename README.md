@@ -1,8 +1,8 @@
-# Voxel-Ray-Intersection module
+# Voxel-Ray-Interaction module
 
 ## Introduction
 
-This repository is released for Voxel-Ray-Intersection (VRI) module.
+This repository is released for Voxel-Ray-Interaction (VRI) module.
 
 ## Requirements
 
@@ -11,6 +11,6 @@ Numpy 1.20.3\
 Matplotlib 3.3.4 (for demo visualization)
 
 ## Demo
-'''
-  python ./VRI/voxel_ray_intersection.py
-'''
+```
+python ./VRI/voxel_ray_interaction.py
+```
