@@ -18,7 +18,14 @@ class RepresentationBase():
 
         CENTER_XYZ = self.func_voxel_idx_to_center(IDX, RANGE, GRID_SIZE)
 
-        return {'RANGE': RANGE, 'DIMS': DIMS, 'GRID_SIZE': GRID_SIZE, 'FIDX': FIDX, 'IDX': IDX, 'CENTER': CENTER_XYZ}
+        return {'RANGE': RANGE, 'DIMS': DIMS, 'FDIM': DIMS['W']*DIMS['H']*DIMS['D'],
+                'GRID_SIZE': GRID_SIZE, 'FIDX': FIDX, 'IDX': IDX, 'CENTER': CENTER_XYZ}
+    
+    def func_voxel_xyz_to_xyzidx(self, x, y, z):
+        xidx = np.floor((x - self.VOXEL_PARAMS['RANGE']['x'][0])/self.VOXEL_PARAMS['GRID_SIZE'])
+        yidx = np.floor((y - self.VOXEL_PARAMS['RANGE']['y'][0])/self.VOXEL_PARAMS['GRID_SIZE'])
+        zidx = np.floor((z - self.VOXEL_PARAMS['RANGE']['z'][0])/self.VOXEL_PARAMS['GRID_SIZE'])
+        return xidx, yidx, zidx
 
     def func_voxel_fidx_to_xyzidx(self, fidx, voxel_dims=None, return_dict=False):
         if voxel_dims is None and self.VOXEL_PARAMS is not None:
@@ -73,7 +80,8 @@ class RepresentationBase():
         vert_ang = self.init_vertical_angle(RANGE, GRID_SIZE)
         ANG = {'h': horz_ang, 'v': vert_ang}
         RAY = self.func_angle_to_ray(ANG)
-        return {'RANGE': RANGE, 'DIMS': DIMS, 'GRID_SIZE': GRID_SIZE, 'FIDX': FIDX, 'IDX': IDX, 'ANGLE': ANG, 'RAY': RAY}
+        return {'RANGE': RANGE, 'DIMS': DIMS, 'FDIM': DIMS['h']*DIMS['v'], 'GRID_SIZE': GRID_SIZE,
+                'FIDX': FIDX, 'IDX': IDX, 'ANGLE': ANG, 'RAY': RAY}
 
     def func_horz_idx_to_angle(self, horz_idx, RANGE=None, GRID_SIZE=None):
         if (RANGE is None or GRID_SIZE is None) and self.RAY_PARAMS is not None:
@@ -177,6 +185,15 @@ class RepresentationBase():
             vert_ang_list.append(func(horizontal_angle, *popt_tmp))
 
         return np.concatenate(vert_ang_list)
+    
+    def func_valid_index(self, xidx, yidx, zidx):
+        return np.logical_and.reduce((
+            xidx>=0,
+            yidx>=0,
+            zidx>=0,
+            xidx<self.VOXEL_PARAMS['DIMS']['D'],
+            yidx<self.VOXEL_PARAMS['DIMS']['W'],
+            zidx<self.VOXEL_PARAMS['DIMS']['H']))
 
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
