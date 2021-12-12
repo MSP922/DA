@@ -4,7 +4,7 @@ import io_data as SemanticKittiIO
 from base_setting import RepresentationBase
 import VRI_utils
 
-class VoxelRayInteraction(RepresentationBase):
+class VoxelRayInteraction_old(RepresentationBase):
     def __init__(self):
         super().__init__()
         self.VOXEL_PARAMS = self.voxel_params()
