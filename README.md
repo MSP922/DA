@@ -1,4 +1,4 @@
-# Data Augmentation
+# Data Augmentation (DA)
 ## Voxel-Ray-Interaction (VRI) module
 
 ### Introduction
