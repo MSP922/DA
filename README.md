@@ -2,7 +2,7 @@
 ## Voxel-Ray-Interaction (VRI) module
 
 ### Introduction
-This repository is released for Voxel-Ray-Interaction (VRI) module.
+This repository is
 
 ### Requirements
 Python 3.7.5\
