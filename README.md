@@ -14,7 +14,7 @@ Matplotlib 3.3.4 (for demo visualization)
 python ./VRI/voxel_ray_interaction.py
 ```
 
-### Recent Udaptes
+### Recent Updates
 * (2021.12.12) Intersection-based code update
 
 ## Background
