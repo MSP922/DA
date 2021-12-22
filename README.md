@@ -1,5 +1,5 @@
 # Data Augmentation (DA)
-## Voxel-Ray-Interaction (VRI) module
+## 
 
 ### Introduction
 This repository is released for Voxel-Ray-Interaction (VRI) module.
