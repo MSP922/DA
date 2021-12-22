@@ -20,5 +20,6 @@ python ./VRI/voxel_ray_interaction.py
 ## Background
 
 ### Outline
- This SW is related to 'data augmentation engine' in 'Development of Driving Environment Data Transformation and Data Verification Technology for the Mutual Utilization of Self-driving Learning Data for Different Vehicles', and in detail, it is SW for LiDAR data augmentation.
+This SW is related to 'data augmentation engine' in 'Development of Driving Environment Data Transformation and Data Verification Technology for the Mutual Utilization of Self-driving Learning Data for Different Vehicles', and in detail, it is SW for LiDAR data augmentation.
 ### Data augmentation engine
+New data with changed weather, lighting, objects, etc. is generated(augmented) from the acquired real environment information or virtual information
