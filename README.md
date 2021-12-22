@@ -18,3 +18,7 @@ python ./VRI/voxel_ray_interaction.py
 * (2021.12.12) Intersection-based code update
 
 ## Background
+
+### Outline
+
+### Data augmentation engine
