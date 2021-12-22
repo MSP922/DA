@@ -25,4 +25,4 @@ This SW is related to 'data augmentation engine' in 'Development of Driving Envi
 New data with changed weather, lighting, objects, etc. is generated(augmented) from the acquired real environment information or virtual information
 - Environmental data augmentation: Generating other types of data in which the environment, object elements, etc. is conducted from the collected data and the environmental information at the time of collection
 - Main object data augmentation: Inserting main target objects (VRU, Vehicle) on the road into the collected data in using AI
-![data_augmentation_image](https://drive.google.com/file/d/1JLsdJJvjb7b0m4g2w1m6H4VrySD5ng9f/view?usp=sharing)
+![data_augmentation_image](https://user-images.githubusercontent.com/95835936/147022053-62dd1851-2717-41af-9233-3c5f344dc8cb.png)
