@@ -7,6 +7,9 @@
 ### Requirements
 
 ### Demo
+```
+python ./VRI/voxel_ray_interaction.py
+```
 
 ## Voxel-Ray-Interaction (VRI) module
 
