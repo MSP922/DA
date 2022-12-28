@@ -6,7 +6,7 @@
 
 ### Requirements
 Pytorch
-
+Numpy
 ### Demo
 ```
 cd ./lidar_model_da
