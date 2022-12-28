@@ -8,7 +8,8 @@
 
 ### Demo
 ```
-python ./VRI/voxel_ray_interaction.py
+cd ./lidar_model_da
+python main.py
 ```
 
 ## Voxel-Ray-Interaction (VRI) module
