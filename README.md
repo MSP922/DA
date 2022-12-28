@@ -1,4 +1,5 @@
-# Data Augmentation (DA) 
+# Data Augmentation (DA)
+## LiDAR Super-Resolution (LSR)
 ## Voxel-Ray-Interaction (VRI) module
 
 ### Introduction
