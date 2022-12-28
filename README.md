@@ -31,7 +31,7 @@ Matplotlib 3.3.4 (for demo visualization)
 python ./VRI/voxel_ray_interaction.py
 ```
 
-### Recent Updates
+## Recent Updates
 * (2021.12.12) Intersection-based code update
 * (2022.12.29) LiDAR Super-Resolution code update
 
