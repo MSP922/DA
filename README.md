@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This repository is released for LiDAR Super-Resolution (LSR).
+This repository is released for LiDAR Super-Resolution (LSR). This works on velodyne files from the KITTI dataset
 
 ### Requirements
 Python 3.8.13\
