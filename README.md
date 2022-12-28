@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This repository is released for LiDAR Super-Resolution (VRI).
+This repository is released for LiDAR Super-Resolution (LSR).
 
 ### Requirements
 Pytorch\
