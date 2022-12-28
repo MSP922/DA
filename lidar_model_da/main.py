@@ -22,8 +22,7 @@ if __name__ == '__main__':
   parser = argparse.ArgumentParser(description="Evaluate the MAE (Mean Absolute Error) on the Carla dataset")
   parser.add_argument('-d', '--data_directory',
                       type=str,
-                      required=False,
-                      default='/home/msp/semantic_kitti_08',
+                      required=True,
                       help='Data dataset directory')
   parser.add_argument('-f', '--frame',
                       type=int,
