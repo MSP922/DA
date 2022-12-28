@@ -6,7 +6,7 @@
 
 ### Requirements
 Pytorch\
-Numpy
+Numpy\
 Vispy
 ### Demo
 ```
