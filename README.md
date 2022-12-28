@@ -8,7 +8,7 @@ This repository is released for LiDAR Super-Resolution (LSR).
 
 ### Requirements
 Python 3.8.13\
-Pytorch\
+Pytorch 1.12\
 Numpy\
 Vispy
 ### Demo
