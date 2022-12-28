@@ -7,6 +7,7 @@
 ### Requirements
 Pytorch\
 Numpy
+Vispy
 ### Demo
 ```
 cd ./lidar_model_da
