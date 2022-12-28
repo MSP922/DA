@@ -10,7 +10,7 @@ This repository is released for LiDAR Super-Resolution (LSR).
 Python 3.8.13\
 Pytorch 1.12.0\
 Numpy 1.21.5\
-Vispy
+Vispy, Matplotlib
 ### Demo
 ```
 cd ./lidar_model_da
