@@ -4,6 +4,8 @@
 
 ### Introduction
 
+This repository is released for LiDAR Super-Resolution (VRI).
+
 ### Requirements
 Pytorch\
 Numpy\
